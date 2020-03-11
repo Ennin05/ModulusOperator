@@ -4,23 +4,41 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void main(String[] args) {
-        testOddness();
+    public static void main(String[] args) {  keepContained();
     }
 
 
-    public static void testOddness() {
-        System.out.println("testOddness");
+    public static void keepContained() {
+        //Want to keep number contained
+        int number = 0;
 
-        int pNumber=10;
+        System.out.println("number contained is: " + (number%5));
 
-        Scanner keyboard = new Scanner(System.in);
+        System.out.println(number%5);
 
-        System.out.println("Type a positive number");
-        pNumber= keyboard.nextInt();
+        number = 1;
+        System.out.println(number%5);
+
+        number = 2;
+        System.out.println(number%5);
+
+        number = 3;
+        System.out.println(number%5);
+
+        number = 4;
+        System.out.println(number%5);
+
+        number = 5;
+        System.out.println(number%5);
+
+        number = 6;
+        System.out.println(number%5);
+
+        number = 7;
+        System.out.println(number%5);
 
 
-        System.out.println("Number is odd "+ (pNumber % 2 !=0));
+
 
     }
 }
